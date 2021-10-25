@@ -1,0 +1,24 @@
+<Container>:
+    orientation:'horizontal'
+    padding: 100
+    texty:text_input
+    labely:label
+    BoxLayout:
+        orientation:'vertical'
+        TextInput:
+            multiline: False
+            size_hint:1,0.4
+            id:text_input
+        Button:
+            
+            text: 'Hello'
+
+            on_release:
+                self.text = 'pressed'
+                root.get_text()
+                
+                                   
+
+    Label:
+        text:'text'
+        id:label
